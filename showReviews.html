@@ -1,0 +1,40 @@
+<!--
+NAME: Colin MacRae
+FSUID: cm19be 
+DUE DATE: 2/16/21
+The program in this file is the individual work of Colin MacRae
+-->
+{% extends "base.html" %}
+
+{% block content %}
+<header>
+	<h1>Reviews for {{restaurant}}</h1>
+</header>
+<body>
+	<!--create table for printing out info of each review-->
+	<table border=5>
+		<thead>
+		   <b>
+		   <td>User</td>
+		   <td>Review</td>
+		   <td>Rating</td>
+		   </b>
+		</thead>
+
+		<!-- for each review, show username, review, and rating-->
+		{% for row in rows %}
+
+		<tr>
+		   <td>{{row["username"]}}</td>
+		   <td>{{row["review"]}}</td>
+		   <td>{{row["rating"]}}</td>
+		</tr>
+
+		{% endfor %}
+	</table>
+
+	<br><br>
+</body>
+{% endblock %}
+
+

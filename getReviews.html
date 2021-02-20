@@ -1,0 +1,22 @@
+<!--
+NAME: Colin MacRae
+FSUID: cm19be 
+DUE DATE: 2/16/21
+The program in this file is the individual work of Colin MacRae
+-->
+{% extends "base.html" %}
+
+{% block content %}
+<title>
+	<h1>See Reviews For a Restaurant</h1>
+</title>
+<body>
+	<form action = "/showReviews/" method = "POST">
+	<!--form for entering name of restaurant to get reviews on-->
+	<table>
+		<tr><td>Restaurant</td><td><input type = "text" name ="restaurant"></td></tr>
+		<tr><td><input type = "submit" value = "Submit"></td></tr>
+	</table>
+	</form>
+</body>
+{% endblock %}

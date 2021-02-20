@@ -1,0 +1,39 @@
+<!--
+NAME: Colin MacRae
+FSUID: cm19be 
+DUE DATE: 2/16/21
+The program in this file is the individual work of Colin MacRae
+-->
+{% extends "base.html" %}
+
+{% block content %}
+<header>
+	<h1>Top Ten Restaurants in Town</h1>
+</header>
+<body>
+	<!--Create table to list info of each restaurant-->
+	<table border = 5>
+		<thead>
+			<b>
+			<td>Restaurant</td>
+			<td>Food</td>
+			<td>Service</td>
+			<td>Ambience</td>
+			<td>Price</td>
+			<td>Rating</td>
+			</b>
+		</thead>
+		<!-- for each restaurant, list info-->
+		{% for row in rows %}
+		<tr>
+			<td>{{row["restaurant"]}}</td>
+			<td>{{row["AVG(food)"]}}</td>
+			<td>{{row["AVG(service)"]}}</td>
+			<td>{{row["AVG(ambience)"]}}</td>
+			<td>{{row["AVG(price)"]}}</td>
+			<td>{{row["AVG(overall)"]}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+{% endblock %}

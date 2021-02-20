@@ -1,0 +1,19 @@
+<!--
+NAME: Colin MacRae
+FSUID: cm19be 
+DUE DATE: 2/16/21
+The program in this file is the individual work of Colin MacRae
+-->
+<!--This is the base file for all other html files included in the templates
+	folder. Just makes it so I don't have to the code for a "Back to Home" 
+	link to	each page individually.
+-->
+<html>
+	<body>
+		<!--code for each page goes in below-->	
+		{% block content %}{% endblock %} 
+		<hr>	
+			<div><a href = "/index">Back to Home</a></div>
+		</hr>
+	</body>
+</html>

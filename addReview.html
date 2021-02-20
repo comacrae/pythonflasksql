@@ -1,0 +1,39 @@
+<!--
+NAME: Colin MacRae
+FSUID: cm19be 
+DUE DATE: 2/16/21
+The program in this file is the individual work of Colin MacRae
+-->
+
+{% extends "base.html" %} <!--signify that the block below will be replaced 
+				in base.html-->
+
+{% block content %}
+	<head>
+	<title>Review Submission Form</title>
+	</head>
+
+	<body>
+
+		<h2>Review Information</h2>
+		
+		<form action = '/saveReview/' method = "POST">
+
+		<table> <!--submission table for various attributes-->
+
+			<tr><td>Username</td><td><input type = "text" name = "username"></td></tr>
+
+			<tr><td>Restaurant</td><td><input type = "text" name = "restaurant"></td></tr>
+			<tr><td>Food</td><td><input type = "number" name = "food"></td></tr>
+			<tr><td>Service</td><td><input type = "number" name = "service"></td></tr>
+			<tr><td>Ambience</td><td><input type = "number" name = "ambience"></td></tr>
+			<tr><td>Price</td><td><input type = "number" name = "price"></td></tr>
+			<tr><td>Overall</td><td><input type = "number" name = "overall"></td></tr>
+			<tr><td>Review</td><td><input type = "text" name = "review"></td></tr>
+			<tr><td><input type = "submit" name = "submit"></td></tr>
+		</table>
+
+		</form>
+
+	</body>
+{% endblock %}
