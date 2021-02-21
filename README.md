@@ -15,4 +15,5 @@ BEFORE RUNNING APP.PY:
 Now you can run app.py with the command python app.py! By visting your localhost port, you can check out the website, which is a simple implementation of a restaurant review database. For more on Flask, or to try this yourself, check out these links:
 
 https://flask.palletsprojects.com/en/1.1.x/
+
 https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
